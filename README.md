@@ -721,29 +721,10 @@ Responsible Use Guidelines
 
 ---
 
-📞 Contact & Support
-
-Developer Contact Information
-
-For support, questions, feedback, or collaboration inquiries:
-
-📱 WhatsApp: +254 735 342 808
-(Please mention "@xh_clinton/baileys-mod" in your initial message)
-
-✈️ Telegram: @xhclintonxd
-(Direct messages open for project-related discussions)
-
-📧 Email: xh_clinton@outlook.com
-(For formal inquiries or detailed technical discussions)
-
-Support Channels
 
 <div align="center">
 
-https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white
-https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white
-https://img.shields.io/badge/Email-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white
-https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white
+P
 
 </div>
 
@@ -789,7 +770,5 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 Empowering developers with powerful WhatsApp automation tools
 
 If this project helped you, consider starring the repository! ⭐
-
-https://img.shields.io/github/stars/xhclintohn/Baileys?style=social
 
 </div>
