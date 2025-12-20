@@ -1,5 +1,4 @@
-```markdown
-# @xh_clinton/baileys-mod
+Baileys-mod
 
 <div align="center">
 
