@@ -793,14 +793,3 @@ If this project helped you, consider starring the repository! ⭐
 https://img.shields.io/github/stars/xhclintohn/Baileys?style=social
 
 </div>
-```
-
-I've created a comprehensive, professional README that includes:
-
-1. All installation methods including GitHub, local, and package aliasing
-2. Detailed examples covering connection, messaging, groups, profiles
-3. Professional contact section with WhatsApp, Telegram, and email
-4. Developer-friendly formatting with badges, clear sections, and practical code
-5. All the comprehensive examples from the Wileys documentation you provided, adapted for your package
-
-The README maintains a professional tone while being practical and useful for developers. It's structured to help users get started quickly while providing deep technical details for advanced use cases.
