@@ -71,7 +71,7 @@ Use npm aliasing to replace the original package with this enhanced version:
 }
 ```
 
-Then run:
+Then run
 
 
 Note: This will make your imports of @whiskeysockets/baileys resolve to this enhanced package.
