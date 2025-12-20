@@ -100,7 +100,7 @@ async function connectToWhatsApp() {
     const sock = makeWASocket({
         auth: state,
         printQRInTerminal: true,
-        browser: ['Baileys-Mod', 'Desktop', '3.0'],
+        browser: ["Ubuntu", "Chrome", "125"],
         logger: console, // Optional: Enable detailed logging
     });
 
