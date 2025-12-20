@@ -45,11 +45,6 @@ Install the latest development version directly from the source repository:
 # Install main branch
 npm install https://github.com/xhclintohn/Baileys.git
 
-# Install from a specific branch
-npm install https://github.com/xhclintohn/Baileys.git#development
-
-# Install from a specific commit/tag
-npm install https://github.com/xhclintohn/Baileys.git#v1.0.0
 ```
 
 Method 3: Local Development Setup
@@ -78,9 +73,6 @@ Use npm aliasing to replace the original package with this enhanced version:
 
 Then run:
 
-```bash
-npm install
-```
 
 Note: This will make your imports of @whiskeysockets/baileys resolve to this enhanced package.
 
