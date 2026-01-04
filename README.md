@@ -22,7 +22,7 @@ A professionally enhanced, feature-rich version of the Baileys WhatsApp Web API.
 - 📱 **Multi-Device Support** – Full support for WhatsApp's multi-device protocol
 - 🔐 **End-to-End Encryption** – Secure communication using Signal Protocol
 - 📨 **All Message Types** – Support for text, media, documents, contacts, locations, polls, and more
-- 👥 **Advanced Group Management** – Comprehensive group controls and utilities
+- 👥 **Advanced Group Management** – Comprehensive group controls and utilities and supports group status
 - 💾 **Flexible Authentication** – Multiple auth state storage options
 - 🛠️ **Developer Friendly** – Clean API, extensive examples, and detailed documentation
 
@@ -64,6 +64,16 @@ Method 4: Package Aliasing (Advanced)
 
 Use npm aliasing to replace the original package with this enhanced version:
 
+Using Git (Simpler)
+
+```json
+// In your package.json
+"dependencies": {
+    "@whiskeysockets/baileys": "github:xhclintohn/Baileys.git"
+}
+```
+
+NPM
 ```json
 // In your package.json
 "dependencies": {
