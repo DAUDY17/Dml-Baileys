@@ -1,53 +1,85 @@
-### Baileys-MOD (Super Baileys) ⭐
+Baileys-MOD (Super Baileys) ⭐
 
 <div align="center">
 
-[![npm version](https://img.shields.io/npm/v/@xh_clinton/baileys-mod.svg?style=for-the-badge)](https://www.npmjs.com/package/@xh_clinton/baileys-mod)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
-[![npm downloads](https://img.shields.io/npm/dm/@xh_clinton/baileys-mod.svg?style=for-the-badge)](https://www.npmjs.com/package/@xh_clinton/baileys-mod)
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?style=for-the-badge&logo=github)](https://github.com/xhclintohn/Baileys)
+https://img.shields.io/npm/v/@xh_clinton/baileys-mod.svg?style=for-the-badge
+https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge
+https://img.shields.io/npm/dm/@xh_clinton/baileys-mod.svg?style=for-the-badge
+https://img.shields.io/badge/GitHub-Repository-blue?style=for-the-badge&logo=github
 
 </div>
 
 A professionally enhanced, feature-rich version of the Baileys WhatsApp Web API. Built for developers requiring robust WhatsApp automation with modern tooling and comprehensive documentation.
 
-**Maintainer:** 𝐱𝐡_𝐜𝐥𝐢𝐧𝐭𝐨𝐧 [Dev]
+Maintainer: 𝐱𝐡_𝐜𝐥𝐢𝐧𝐭𝐨𝐧 [Dev]
 
 ---
 
-## ✨ Features
+📑 Table of Contents
 
-- 🚀 **Modern & Fast** – Built with TypeScript and latest technologies
-- 🔧 **Enhanced Stability** – Improved connection handling and error recovery
-- 📱 **Multi-Device Support** – Full support for WhatsApp's multi-device protocol
-- 🔐 **End-to-End Encryption** – Secure communication using Signal Protocol
-- 📨 **All Message Types** – Support for text, media, documents, contacts, locations, polls, and more
-- 👥 **Advanced Group Management** – Comprehensive group controls and utilities and supports group status
-- 💾 **Flexible Authentication** – Multiple auth state storage options
-- 🛠️ **Developer Friendly** – Clean API, extensive examples, and detailed documentation
+· ✨ Features
+· 📦 Installation
+· 🚀 Quick Start
+· 🔌 Connection & Configuration
+· 💾 Authentication State Management
+· 📤 Sending Messages
+· 📁 Chat & Message Management
+· 👥 Group Management
+· 👤 User & Profile Management
+· 🔒 Privacy & Block Management
+· 🗄️ Data Store Implementation
+· 🛠️ Utility Functions
+· 💡 Best Practices & Tips
+· ⚠️ Important Legal Notice
+· 📄 License
 
 ---
 
-## 📦 Installation
+✨ Features
+
+<details>
+<summary>Click to view features</summary>
+
+· 🚀 Modern & Fast – Built with TypeScript and latest technologies
+· 🔧 Enhanced Stability – Improved connection handling and error recovery
+· 📱 Multi-Device Support – Full support for WhatsApp's multi-device protocol
+· 🔐 End-to-End Encryption – Secure communication using Signal Protocol
+· 📨 All Message Types – Support for text, media, documents, contacts, locations, polls, and more
+· 👥 Advanced Group Management – Comprehensive group controls and utilities and supports group status
+· 💾 Flexible Authentication – Multiple auth state storage options
+· 🛠️ Developer Friendly – Clean API, extensive examples, and detailed documentation
+
+</details>
+
+---
+
+📦 Installation
 
 Choose the installation method that best fits your workflow:
 
-### **Method 1: Via npm (Recommended for Production)**
+<details>
+<summary><strong>Method 1: Via npm (Recommended for Production)</strong></summary>
+
 ```bash
 npm install @xh_clinton/baileys-mod
 ```
 
-Method 2: Directly from GitHub
+</details>
+
+<details>
+<summary><strong>Method 2: Directly from GitHub</strong></summary>
 
 Install the latest development version directly from the source repository:
 
 ```bash
 # Install main branch
 npm install https://github.com/xhclintohn/Baileys.git
-
 ```
 
-Method 3: Local Development Setup
+</details>
+
+<details>
+<summary><strong>Method 3: Local Development Setup</strong></summary>
 
 For contributing or local testing, install from a local directory:
 
@@ -60,11 +92,14 @@ cd your-project
 npm install /path/to/cloned/Baileys
 ```
 
-Method 4: Package Aliasing (Advanced)
+</details>
+
+<details>
+<summary><strong>Method 4: Package Aliasing (Advanced)</strong></summary>
 
 Use npm aliasing to replace the original package with this enhanced version:
 
-Using Git (Simpler)
+Using Git (Simpler):
 
 ```json
 // In your package.json
@@ -73,7 +108,8 @@ Using Git (Simpler)
 }
 ```
 
-NPM
+Using NPM:
+
 ```json
 // In your package.json
 "dependencies": {
@@ -81,12 +117,18 @@ NPM
 }
 ```
 
-Then run
+Then run:
 
+```bash
+npm install
+```
 
 Note: This will make your imports of @whiskeysockets/baileys resolve to this enhanced package.
 
-Method 5: Using Yarn
+</details>
+
+<details>
+<summary><strong>Method 5: Using Yarn</strong></summary>
 
 ```bash
 yarn add @xh_clinton/baileys-mod
@@ -94,11 +136,14 @@ yarn add @xh_clinton/baileys-mod
 yarn add https://github.com/xhclintohn/Baileys.git
 ```
 
+</details>
+
 ---
 
 🚀 Quick Start
 
-Basic Connection Example
+<details>
+<summary><strong>Basic Connection Example</strong></summary>
 
 ```javascript
 const { makeWASocket, useMultiFileAuthState, DisconnectReason } = require('@xh_clinton/baileys-mod');
@@ -150,7 +195,10 @@ async function connectToWhatsApp() {
 connectToWhatsApp().catch(console.error);
 ```
 
-Connect with Pairing Code (Alternative to QR)
+</details>
+
+<details>
+<summary><strong>Connect with Pairing Code (Alternative to QR)</strong></summary>
 
 ```javascript
 const { makeWASocket } = require('@xh_clinton/baileys-mod');
@@ -168,11 +216,14 @@ if (!sock.authState.creds.registered) {
 }
 ```
 
+</details>
+
 ---
 
 🔌 Connection & Configuration
 
-Browser Configuration Constants
+<details>
+<summary><strong>Browser Configuration Constants</strong></summary>
 
 ```javascript
 const { makeWASocket, Browsers } = require('@xh_clinton/baileys-mod');
@@ -187,7 +238,10 @@ const sock = makeWASocket({
 });
 ```
 
-Important Socket Configuration Notes
+</details>
+
+<details>
+<summary><strong>Important Socket Configuration Notes</strong></summary>
 
 ```javascript
 const NodeCache = require('node-cache');
@@ -218,11 +272,14 @@ sock.ev.on('groups.update', async ([event]) => {
 });
 ```
 
+</details>
+
 ---
 
 💾 Authentication State Management
 
-Multi-File Auth State (Recommended for Development)
+<details>
+<summary><strong>Multi-File Auth State (Recommended for Development)</strong></summary>
 
 ```javascript
 const { makeWASocket, useMultiFileAuthState } = require('@xh_clinton/baileys-mod');
@@ -234,7 +291,10 @@ async function connect() {
 }
 ```
 
-Custom Database Auth State (Production)
+</details>
+
+<details>
+<summary><strong>Custom Database Auth State (Production)</strong></summary>
 
 ```javascript
 const { makeWASocket, makeCacheableSignalKeyStore } = require('@xh_clinton/baileys-mod');
@@ -256,11 +316,14 @@ sock.ev.on('creds.update', async (creds) => {
 });
 ```
 
+</details>
+
 ---
 
 📤 Sending Messages
 
-Basic Message Types
+<details>
+<summary><strong>Basic Message Types</strong></summary>
 
 ```javascript
 // Text message
@@ -279,7 +342,10 @@ await sock.sendMessage(jid, { text: 'This is a reply!' }, { quoted: originalMess
 await sock.sendMessage(jid, { forward: messageToForward });
 ```
 
-Media Messages
+</details>
+
+<details>
+<summary><strong>Media Messages</strong></summary>
 
 ```javascript
 // Image with caption
@@ -311,7 +377,10 @@ await sock.sendMessage(jid, {
 });
 ```
 
-Interactive Messages
+</details>
+
+<details>
+<summary><strong>Interactive Messages</strong></summary>
 
 ```javascript
 // Location
@@ -357,11 +426,14 @@ await sock.sendMessage(jid, {
 });
 ```
 
+</details>
+
 ---
 
 📁 Chat & Message Management
 
-Chat Operations
+<details>
+<summary><strong>Chat Operations</strong></summary>
 
 ```javascript
 // Archive/unarchive chat
@@ -384,7 +456,10 @@ await sock.chatModify({ markRead: false }, jid);
 await sock.chatModify({ delete: true }, jid);
 ```
 
-Message Operations
+</details>
+
+<details>
+<summary><strong>Message Operations</strong></summary>
 
 ```javascript
 // Delete message for everyone
@@ -417,21 +492,67 @@ sock.ev.on('messages.upsert', async ({ messages }) => {
 });
 ```
 
+</details>
+
 ---
 
 👥 Group Management
 
-Group Operations
+<details>
+<summary><strong>Group Operations</strong></summary>
 
 ```javascript
-//Upload or put group status (simple example)
-`module.exports = {
+// Create group
+const group = await sock.groupCreate('My New Group', [
+    '12345678901@s.whatsapp.net',
+    '09876543210@s.whatsapp.net'
+]);
+
+// Add/remove participants
+await sock.groupParticipantsUpdate(
+    groupJid,
+    ['12345678901@s.whatsapp.net'],
+    'add' // 'remove', 'promote', or 'demote'
+);
+
+// Update group info
+await sock.groupUpdateSubject(groupJid, 'New Group Name');
+await sock.groupUpdateDescription(groupJid, 'New group description');
+
+// Group settings
+await sock.groupSettingUpdate(groupJid, 'announcement'); // Only admins can send
+await sock.groupSettingUpdate(groupJid, 'not_announcement'); // Everyone can send
+await sock.groupSettingUpdate(groupJid, 'locked'); // Only admins can change settings
+await sock.groupSettingUpdate(groupJid, 'unlocked'); // Everyone can change settings
+
+// Invite links
+const inviteCode = await sock.groupInviteCode(groupJid);
+const inviteLink = `https://chat.whatsapp.com/${inviteCode}`;
+
+// Join group via invite
+const groupJid = await sock.groupAcceptInvite('INVITECODEHERE');
+
+// Get group metadata
+const metadata = await sock.groupMetadata(groupJid);
+console.log(`Group: ${metadata.subject}, Participants: ${metadata.participants.length}`);
+
+// Leave group
+await sock.groupLeave(groupJid);
+```
+
+</details>
+
+<details>
+<summary><strong>Group Status Upload (Example Command)</strong></summary>
+
+```javascript
+// Example group status command
+module.exports = {
   name: 'gstatus',
   aliases: ['groupstatus', 'gs'],
   description: 'Posts a group status with text, image, video, or audio.',
   run: async (context) => {
     const { client, m, prefix, isBotAdmin, IsGroup, botname } = context;
-
 
     const formatMsg = (text) => `◈━━━━━━━━━━━━━━━◈\n${text}\n◈━━━━━━━━━━━━━━━◈`;
 
@@ -471,9 +592,7 @@ Group Operations
         );
       }
 
-
       const defaultCaption = `Group status Posted By Toxic-MD✅\n\nJOIN\nhttps://chat.whatsapp.com/GoXKLVJgTAAC3556FXkfFI?mode=wwt`;
-
 
       if (/image/.test(mime)) {
         const buffer = await client.downloadMediaMessage(quoted);
@@ -518,51 +637,16 @@ Group Operations
     }
   }
 };
-``
-
-// Create group
-const group = await sock.groupCreate('My New Group', [
-    '12345678901@s.whatsapp.net',
-    '09876543210@s.whatsapp.net'
-]);
-
-// Add/remove participants
-await sock.groupParticipantsUpdate(
-    groupJid,
-    ['12345678901@s.whatsapp.net'],
-    'add' // 'remove', 'promote', or 'demote'
-);
-
-// Update group info
-await sock.groupUpdateSubject(groupJid, 'New Group Name');
-await sock.groupUpdateDescription(groupJid, 'New group description');
-
-// Group settings
-await sock.groupSettingUpdate(groupJid, 'announcement'); // Only admins can send
-await sock.groupSettingUpdate(groupJid, 'not_announcement'); // Everyone can send
-await sock.groupSettingUpdate(groupJid, 'locked'); // Only admins can change settings
-await sock.groupSettingUpdate(groupJid, 'unlocked'); // Everyone can change settings
-
-// Invite links
-const inviteCode = await sock.groupInviteCode(groupJid);
-const inviteLink = `https://chat.whatsapp.com/${inviteCode}`;
-
-// Join group via invite
-const groupJid = await sock.groupAcceptInvite('INVITECODEHERE');
-
-// Get group metadata
-const metadata = await sock.groupMetadata(groupJid);
-console.log(`Group: ${metadata.subject}, Participants: ${metadata.participants.length}`);
-
-// Leave group
-await sock.groupLeave(groupJid);
 ```
+
+</details>
 
 ---
 
 👤 User & Profile Management
 
-User Operations
+<details>
+<summary><strong>User Operations</strong></summary>
 
 ```javascript
 // Check if user exists on WhatsApp
@@ -588,7 +672,10 @@ await sock.presenceSubscribe('12345678901@s.whatsapp.net');
 const businessProfile = await sock.getBusinessProfile('12345678901@s.whatsapp.net');
 ```
 
-Profile Operations
+</details>
+
+<details>
+<summary><strong>Profile Operations</strong></summary>
 
 ```javascript
 // Update your own profile
@@ -605,11 +692,14 @@ await sock.updateProfilePicture(
 await sock.removeProfilePicture('12345678901@s.whatsapp.net');
 ```
 
+</details>
+
 ---
 
 🔒 Privacy & Block Management
 
-Privacy Settings
+<details>
+<summary><strong>Privacy Settings</strong></summary>
 
 ```javascript
 // Update various privacy settings
@@ -624,7 +714,10 @@ await sock.updateGroupsAddPrivacy('contacts');
 const privacySettings = await sock.fetchPrivacySettings(true);
 ```
 
-Block Management
+</details>
+
+<details>
+<summary><strong>Block Management</strong></summary>
 
 ```javascript
 // Block/unblock user
@@ -635,11 +728,14 @@ await sock.updateBlockStatus(jid, 'unblock');
 const blocklist = await sock.fetchBlocklist();
 ```
 
+</details>
+
 ---
 
 🗄️ Data Store Implementation
 
-In-Memory Store (Development)
+<details>
+<summary><strong>In-Memory Store (Development)</strong></summary>
 
 ```javascript
 const { makeInMemoryStore } = require('@xh_clinton/baileys-mod');
@@ -660,7 +756,10 @@ sock.ev.on('chats.upsert', () => {
 });
 ```
 
-Custom Store (Production)
+</details>
+
+<details>
+<summary><strong>Custom Store (Production)</strong></summary>
 
 ```javascript
 // Implement your own store using databases like MongoDB, PostgreSQL, etc.
@@ -679,11 +778,14 @@ class MyCustomStore {
 const myStore = new MyCustomStore();
 ```
 
+</details>
+
 ---
 
 🛠️ Utility Functions
 
-Core Utilities
+<details>
+<summary><strong>Core Utilities</strong></summary>
 
 ```javascript
 const {
@@ -712,7 +814,10 @@ if (isJidGroup(jid)) {
 const stream = await downloadContentFromMessage(message.imageMessage, 'image');
 ```
 
-Event Debugging
+</details>
+
+<details>
+<summary><strong>Event Debugging</strong></summary>
 
 ```javascript
 // Enable debug logging
@@ -727,11 +832,16 @@ sock.ws.on('CB:edge_routing', (node) => {
 });
 ```
 
+</details>
+
 ---
 
 💡 Best Practices & Tips
 
-Performance Optimization
+<details>
+<summary><strong>Performance Optimization & Security</strong></summary>
+
+Performance Optimization:
 
 1. Cache Group Metadata: Always cache group metadata to reduce API calls
 2. Implement Proper Store: Use databases instead of in-memory stores for production
@@ -739,14 +849,17 @@ Performance Optimization
 4. Rate Limiting: Respect WhatsApp's rate limits to avoid bans
 5. Error Handling: Wrap socket calls in try-catch blocks
 
-Security Considerations
+Security Considerations:
 
 1. Never Hardcode Credentials: Use environment variables
 2. Secure Auth Storage: Encrypt authentication data in databases
 3. Input Validation: Validate all inputs before processing
 4. Regular Updates: Keep the package updated for security fixes
 
-Common Patterns
+</details>
+
+<details>
+<summary><strong>Common Patterns</strong></summary>
 
 ```javascript
 // Auto-reconnect pattern
@@ -792,15 +905,20 @@ class MessageQueue {
 }
 ```
 
+</details>
+
 ---
 
 ⚠️ Important Legal Notice
+
+<details>
+<summary><strong>Legal Disclaimer & Terms of Service</strong></summary>
 
 Disclaimer: This project is NOT affiliated with, authorized, maintained, sponsored, or endorsed by WhatsApp LLC or any of its affiliates or subsidiaries.
 
 The official WhatsApp website can be found at https://whatsapp.com. "WhatsApp" as well as related names, marks, emblems, and images are registered trademarks of their respective owners.
 
-Terms of Service Compliance
+Terms of Service Compliance:
 
 · This library is meant for legitimate automation purposes only
 · Do NOT use for spamming, bulk messaging, or harassment
@@ -808,7 +926,7 @@ Terms of Service Compliance
 · Users are solely responsible for how they use this tool
 · The maintainer assumes NO liability for misuse or damages
 
-Responsible Use Guidelines
+Responsible Use Guidelines:
 
 1. Obtain Consent: Only message users who have explicitly consented
 2. Respect Privacy: Do not collect or misuse personal data
@@ -816,47 +934,34 @@ Responsible Use Guidelines
 4. Provide Value: Ensure your automation provides genuine utility
 5. Monitor Usage: Regularly audit your usage patterns
 
----
-
-
-<div align="center">
-
-P
-
-</div>
-
-Getting Help
-
-1. Documentation: First, check this README and the official Baileys documentation
-2. GitHub Issues: For bug reports and feature requests, please use the GitHub Issues page
-3. Contact Directly: For urgent matters or specific questions, use the contact methods above
-4. Community: Consider joining relevant developer communities for broader support
-
-Response Time: The developer typically responds within 24-48 hours on business days.
+</details>
 
 ---
 
 📄 License
 
+<details>
+<summary><strong>License & Contribution Information</strong></summary>
+
 Distributed under the MIT License. See the LICENSE file in the repository for more information.
 
-Third-Party Credits
-
+Third-Party Credits:
 This project is based on the excellent work of:
 
 · Baileys by WhiskeySockets
 · Signal Protocol implementations
 · Various open-source contributors
 
-Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+Contributing:
+Contributions are welcome!Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
 1. Fork the repository
 2. Create your feature branch (git checkout -b feature/AmazingFeature)
 3. Commit your changes (git commit -m 'Add some AmazingFeature')
 4. Push to the branch (git push origin feature/AmazingFeature)
 5. Open a Pull Request
+
+</details>
 
 ---
 
