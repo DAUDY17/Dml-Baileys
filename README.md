@@ -18,23 +18,38 @@ A professionally enhanced, feature-rich version of the Baileys WhatsApp Web API.
 ## 📋 Table of Contents
 
 - [✨ Features](#✨-features)
+
 - [📦 Installation](#📦-installation)
+
 - [🚀 Quick Start](#🚀-quick-start)
+
 - [🔌 Connection & Configuration](#🔌-connection--configuration)
+
 - [💾 Authentication State Management](#💾-authentication-state-management)
+
 - [📤 Sending Messages](#📤-sending-messages)
+
 - [📁 Chat & Message Management](#📁-chat--message-management)
+
 - [👥 Group Management](#👥-group-management)
   - [Group Operations](#group-operations)
   - [Group Status Management](#group-status-management)
+
 - [👤 User & Profile Management](#👤-user--profile-management)
+
 - [🔒 Privacy & Block Management](#🔒-privacy--block-management)
+
 - [🗄️ Data Store Implementation](#🗄️-data-store-implementation)
+
 - [🛠️ Utility Functions](#🛠️-utility-functions)
 - [💡 Best Practices & Tips](#💡-best-practices--tips)
+- 
 - [⚠️ Important Legal Notice](#⚠️-important-legal-notice)
+- 
 - [🆘 Getting Help](#🆘-getting-help)
+- 
 - [📄 License](#📄-license)
+- 
 - [🤝 Contributing](#🤝-contributing)
 
 ---
@@ -42,12 +57,19 @@ A professionally enhanced, feature-rich version of the Baileys WhatsApp Web API.
 <h2 align="center">✨ Features</h2>
 
 - 🚀 **Modern & Fast** – Built with TypeScript and latest technologies
+- 
 - 🔧 **Enhanced Stability** – Improved connection handling and error recovery
+- 
 - 📱 **Multi-Device Support** – Full support for WhatsApp's multi-device protocol
+- 
 - 🔐 **End-to-End Encryption** – Secure communication using Signal Protocol
+- 
 - 📨 **All Message Types** – Support for text, media, documents, contacts, locations, polls, and more
+- 
 - 👥 **Advanced Group Management** – Comprehensive group controls and utilities, including group status support
+- 
 - 💾 **Flexible Authentication** – Multiple auth state storage options
+- 
 - 🛠️ **Developer Friendly** – Clean API, extensive examples, and detailed documentation
 
 ---
@@ -59,7 +81,7 @@ Choose the installation method that best fits your workflow:
 ### **Method 1: Package Aliasing (Advanced)**
 Use npm aliasing to replace the original package with this enhanced version:
 
-#### Using Git (Simpler)
+#### Using Git (Recomended)
 ```json
 // In your package.json
 "dependencies": {
@@ -120,7 +142,7 @@ yarn add https://github.com/xhclintohn/Baileys.git
 <summary>Click to expand code</summary>
 
 ```javascript
-const { makeWASocket, useMultiFileAuthState, DisconnectReason } = require('@xh_clinton/baileys-mod');
+const { makeWASocket, useMultiFileAuthState, DisconnectReason } = require('@whiskeysockets/baileys');
 const { Boom } = require('@hapi/boom');
 
 async function connectToWhatsApp() {
@@ -175,7 +197,7 @@ connectToWhatsApp().catch(console.error);
 <summary>Click to expand code</summary>
 
 ```javascript
-const { makeWASocket } = require('@xh_clinton/baileys-mod');
+const { makeWASocket } = require('@whiskeysockets/baileys');
 
 const sock = makeWASocket({ printQRInTerminal: false });
 
@@ -200,7 +222,7 @@ if (!sock.authState.creds.registered) {
 <summary>Click to expand code</summary>
 
 ```javascript
-const { makeWASocket, Browsers } = require('@xh_clinton/baileys-mod');
+const { makeWASocket, Browsers } = require('@whiskeysockets/baileys');
 
 // Pre-defined browser configurations
 const sock = makeWASocket({
@@ -256,7 +278,7 @@ sock.ev.on('groups.update', async ([event]) => {
 <summary>Click to expand code</summary>
 
 ```javascript
-const { makeWASocket, useMultiFileAuthState } = require('@xh_clinton/baileys-mod');
+const { makeWASocket, useMultiFileAuthState } = require('@whiskeysockets/baileys');
 
 async function connect() {
     const { state, saveCreds } = await useMultiFileAuthState('auth_info_directory');
@@ -271,7 +293,7 @@ async function connect() {
 <summary>Click to expand code</summary>
 
 ```javascript
-const { makeWASocket, makeCacheableSignalKeyStore } = require('@xh_clinton/baileys-mod');
+const { makeWASocket, makeCacheableSignalKeyStore } = require('@whiskeysockets/baileys');
 
 // Example with custom database storage
 const myAuthState = {
@@ -451,7 +473,7 @@ await sock.sendMessage(jid, {
 await sock.readMessages([messageKey1, messageKey2]);
 
 // Download media from message
-const { downloadMediaMessage } = require('@xh_clinton/baileys-mod');
+const { downloadMediaMessage } = require('@whiskeysockets/baileys');
 const fs = require('fs');
 
 sock.ev.on('messages.upsert', async ({ messages }) => {
@@ -711,7 +733,7 @@ const blocklist = await sock.fetchBlocklist();
 <summary>Click to expand code</summary>
 
 ```javascript
-const { makeInMemoryStore } = require('@xh_clinton/baileys-mod');
+const { makeInMemoryStore } = require('@whiskeysockets/baileys');
 const store = makeInMemoryStore({ logger: console });
 
 // Read from/write to file
@@ -773,7 +795,7 @@ const {
     downloadContentFromMessage,
     getAggregateVotesInPollMessage,
     proto
-} = require('@xh_clinton/baileys-mod');
+} = require('@whiskeysockets/baileys');
 
 // Message type detection
 const messageType = getContentType(message);
