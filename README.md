@@ -39,7 +39,7 @@ A professionally enhanced, feature-rich version of the Baileys WhatsApp Web API.
 
 ---
 
-## ✨ Features
+<h2 align="center">✨ Features</h2>
 
 - 🚀 **Modern & Fast** – Built with TypeScript and latest technologies
 - 🔧 **Enhanced Stability** – Improved connection handling and error recovery
@@ -52,36 +52,11 @@ A professionally enhanced, feature-rich version of the Baileys WhatsApp Web API.
 
 ---
 
-## 📦 Installation
+<h2 align="center">📦 Installation</h2>
 
 Choose the installation method that best fits your workflow:
 
-### **Method 1: Via npm (Recommended for Production)**
-```bash
-npm install @xh_clinton/baileys-mod
-```
-
-### **Method 2: Directly from GitHub**
-Install the latest development version directly from the source repository:
-
-```bash
-# Install main branch
-npm install https://github.com/xhclintohn/Baileys.git
-```
-
-### **Method 3: Local Development Setup**
-For contributing or local testing, install from a local directory:
-
-```bash
-# Clone the repository first
-git clone https://github.com/xhclintohn/Baileys.git
-cd your-project
-
-# Install as local dependency
-npm install /path/to/cloned/Baileys
-```
-
-### **Method 4: Package Aliasing (Advanced)**
+### **Method 1: Package Aliasing (Advanced)**
 Use npm aliasing to replace the original package with this enhanced version:
 
 #### Using Git (Simpler)
@@ -104,6 +79,31 @@ Then run `npm install`.
 
 **Note:** This will make your imports of `@whiskeysockets/baileys` resolve to this enhanced package.
 
+### **Method 2: Via npm (Recommended for Production)**
+```bash
+npm install @xh_clinton/baileys-mod
+```
+
+### **Method 3: Directly from GitHub**
+Install the latest development version directly from the source repository:
+
+```bash
+# Install main branch
+npm install https://github.com/xhclintohn/Baileys.git
+```
+
+### **Method 4: Local Development Setup**
+For contributing or local testing, install from a local directory:
+
+```bash
+# Clone the repository first
+git clone https://github.com/xhclintohn/Baileys.git
+cd your-project
+
+# Install as local dependency
+npm install /path/to/cloned/Baileys
+```
+
 ### **Method 5: Using Yarn**
 ```bash
 yarn add @xh_clinton/baileys-mod
@@ -113,7 +113,7 @@ yarn add https://github.com/xhclintohn/Baileys.git
 
 ---
 
-## 🚀 Quick Start
+<h2 align="center">🚀 Quick Start</h2>
 
 ### Basic Connection Example
 <details>
@@ -193,7 +193,7 @@ if (!sock.authState.creds.registered) {
 
 ---
 
-## 🔌 Connection & Configuration
+<h2 align="center">🔌 Connection & Configuration</h2>
 
 ### Browser Configuration Constants
 <details>
@@ -249,7 +249,7 @@ sock.ev.on('groups.update', async ([event]) => {
 
 ---
 
-## 💾 Authentication State Management
+<h2 align="center">💾 Authentication State Management</h2>
 
 ### Multi-File Auth State (Recommended for Development)
 <details>
@@ -293,7 +293,7 @@ sock.ev.on('creds.update', async (creds) => {
 
 ---
 
-## 📤 Sending Messages
+<h2 align="center">📤 Sending Messages</h2>
 
 ### Basic Message Types
 <details>
@@ -403,7 +403,7 @@ await sock.sendMessage(jid, {
 
 ---
 
-## 📁 Chat & Message Management
+<h2 align="center">📁 Chat & Message Management</h2>
 
 ### Chat Operations
 <details>
@@ -469,7 +469,7 @@ sock.ev.on('messages.upsert', async ({ messages }) => {
 
 ---
 
-## 👥 Group Management
+<h2 align="center">👥 Group Management</h2>
 
 ### Group Operations
 <details>
@@ -615,7 +615,7 @@ module.exports = {
 
 ---
 
-## 👤 User & Profile Management
+<h2 align="center">👤 User & Profile Management</h2>
 
 ### User Operations
 <details>
@@ -668,7 +668,7 @@ await sock.removeProfilePicture('12345678901@s.whatsapp.net');
 
 ---
 
-## 🔒 Privacy & Block Management
+<h2 align="center">🔒 Privacy & Block Management</h2>
 
 ### Privacy Settings
 <details>
@@ -704,7 +704,7 @@ const blocklist = await sock.fetchBlocklist();
 
 ---
 
-## 🗄️ Data Store Implementation
+<h2 align="center">🗄️ Data Store Implementation</h2>
 
 ### In-Memory Store (Development)
 <details>
@@ -754,7 +754,7 @@ const myStore = new MyCustomStore();
 
 ---
 
-## 🛠️ Utility Functions
+<h2 align="center">🛠️ Utility Functions</h2>
 
 ### Core Utilities
 <details>
@@ -808,7 +808,7 @@ sock.ws.on('CB:edge_routing', (node) => {
 
 ---
 
-## 💡 Best Practices & Tips
+<h2 align="center">💡 Best Practices & Tips</h2>
 
 ### Performance Optimization
 1. Cache Group Metadata: Always cache group metadata to reduce API calls
@@ -874,7 +874,7 @@ class MessageQueue {
 
 ---
 
-## ⚠️ Important Legal Notice
+<h2 align="center">⚠️ Important Legal Notice</h2>
 
 **Disclaimer:** This project is NOT affiliated with, authorized, maintained, sponsored, or endorsed by WhatsApp LLC or any of its affiliates or subsidiaries.
 
@@ -896,7 +896,7 @@ The official WhatsApp website can be found at https://whatsapp.com. "WhatsApp" a
 
 ---
 
-## 🆘 Getting Help
+<h2 align="center">🆘 Getting Help</h2>
 
 1. **Documentation:** First, check this README and the official Baileys documentation
 2. **GitHub Issues:** For bug reports and feature requests, please use the GitHub Issues page
@@ -907,7 +907,7 @@ The official WhatsApp website can be found at https://whatsapp.com. "WhatsApp" a
 
 ---
 
-## 📄 License
+<h2 align="center">📄 License</h2>
 
 Distributed under the MIT License. See the LICENSE file in the repository for more information.
 
@@ -919,7 +919,7 @@ This project is based on the excellent work of:
 
 ---
 
-## 🤝 Contributing
+<h2 align="center">🤝 Contributing</h2>
 
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
