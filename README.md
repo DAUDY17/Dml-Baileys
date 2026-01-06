@@ -33,7 +33,7 @@ A professionally enhanced, feature-rich version of the Baileys WhatsApp Web API.
 
 - [👥 Group Management](#👥-group-management)
   - [Group Operations](#group-operations)
-  - [Group Status Management](#group-status-management)
+  - [Group Status](#group-status-management)
 
 - [👤 User & Profile Management](#👤-user--profile-management)
 
